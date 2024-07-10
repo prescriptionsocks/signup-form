@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form_image_wrapper">
+            <div class="form_logo_wrapper">
+                <img src="image.png" alt="The Odin Project logo" class="form_logo">
+            </div>
+        </div>
+        <div class="form_right">
+            <div class="form_wrapper">
+                <p class="bold-font">This is not a real service. You know you need something like this in your life to help you realize your deepest dreams. Signup now to get started</p>
+                <p class="bold-font">You know you want to</p>
+                <form action="">
+                    <fieldset>
+                        <legend>Then let's do this</legend>
+                        <div class="form_feild_wrapper">
+                            <label for="first-name">FIRST NAME</label>
+                            <input type="text" name="first-name" id="first-name" required placeholder="e.g Martha">
+                            <p class="form_error_msg" id="first-name-error">*Please enter your first name</p>
+                        </div>
+                        <div class="form_feild_wrapper">
+                            <label for="last-name">LAST NAME</label>
+                            <input type="text" name="last-name" id="last-name" required placeholder="e.g Kanini">
+                            <p class="form_error_msg" id="last-name-error">*Please enter your last name</p>
+                        </div>
+                        <div class="form_feild_wrapper">
+                            <label for="email">EMAIL</label>
+                            <input type="email" name="email" id="email" required placeholder="e.g youremail@email.com">
+                            <p class="form_error_msg" id="email-error">*Your email is incorrect</p>
+                        </div>
+                        <div class="form_feild_wrapper">
+                            <label for="phone-number">PHONE NUMBER</label>
+                            <input type="number" name="phone-number" id="phone-number" placeholder="e.g +254 701 234567" required pattern="^(?:\+?\d{1,3}[\s-]?)?(?:\(\d{1,4}\)|\d{1,4})[\s-]?\d{1,4}[\s-]?\d{1,9}$">
+                            <p class="form_error_msg" id="phone-number-error">*Your number is incorrect</p>
+                        </div>
+                        <div class="form_feild_wrapper">
+                            <label for="password">PASSWORD</label>
+                            <input type="password" name="password" id="password" required>
+                            <p class="form_error_msg" id="password-error">*Passwords do not match</p>
+                        </div>
+                        <div class="form_feild_wrapper">
+                            <label for="confirm-password">CONFIRM PASSWORD</label>
+                            <input type="password" name="confirm-password" id="confirm-password" required>
+                            <p class="form_error_msg" id="confirm-password-error">*Passwords do not match</p>
+                        </div>
+                    </fieldset>
+                    <button type="submit">Create Account</button>
+                    <p>Already have an acccount? <a class="log-in-link" href="#">Log in</a></p>
+                </form>
+            </div>
+
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>

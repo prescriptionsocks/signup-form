@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.container{
+    display: flex;
+    min-height: 100vh;
+}
+
+.form_image_wrapper{
+    width: 45%;
+    background-color: #DD6050;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.form_logo_wrapper{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 30%;
+    padding: 1rem 0;
+}
+
+.form_logo{
+    height: 8rem;
+}
+
+.form_right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.bold-font{
+    font-weight: 600;
+}
+
+.form_wrapper{
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+fieldset{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1rem;
+    border: none;
+    padding-top: 1rem;
+}
+
+.form_feild_wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+label{
+    font-size: 0.8rem;
+}
+
+input{
+    padding: 0.5rem 0.25rem;
+    border: 1px solid grey;
+    border-radius: 0.15rem;
+}
+
+input:focus{
+    outline: none;
+    border: 1px solid rgb(64, 64, 255);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.18);
+}
+
+.form_error_msg{
+    font-size: 0.8rem;
+    color: red;
+    display: none;
+}
+
+button{
+    padding: 0.5rem 2rem;
+    background-color: #DD6050;
+    border: none;
+    border-radius: 0.125rem;
+    font-weight: 600;
+}
+
+.log-in-link{
+    color: #DD6050;
+}
